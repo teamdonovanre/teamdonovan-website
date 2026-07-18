@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Team Donovan | Concierge Real Estate Services</title>
-    <!-- Tailwind CSS for modern layout styling -->
+    <!-- Tailwind CSS -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <!-- Google Fonts for the luxury Serif and clean Sans typography -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -17,7 +17,7 @@
 </head>
 <body class="bg-slate-50 text-slate-800 antialiased scroll-smooth">
 
-    <!-- 1. NAVIGATION BAR -->
+    <!-- NAVIGATION BAR -->
     <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-100 px-6 py-4 flex justify-between items-center shadow-sm">
         <div class="text-xl font-bold tracking-tight text-slate-900">
             Team<span class="text-amber-500 font-medium">Donovan</span>
@@ -34,11 +34,9 @@
         </div>
     </nav>
 
-    <!-- 2. HERO SECTION -->
+    <!-- HERO SECTION -->
     <header class="relative bg-slate-900 h-[85vh] flex items-center justify-center overflow-hidden">
-        <!-- Luxury Real Estate Background Image Overlay -->
         <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1920&q=80" alt="Luxury Real Estate" class="absolute inset-0 w-full h-full object-cover opacity-35 mix-blend-multiply">
-        
         <div class="relative max-w-4xl mx-auto text-center px-6 text-white">
             <p class="text-amber-400 font-semibold tracking-widest text-xs uppercase mb-3">teamdonovan.net</p>
             <h1 class="text-4xl md:text-6xl font-serif font-medium leading-tight mb-6">
@@ -58,7 +56,7 @@
         </div>
     </header>
 
-    <!-- 3. SERVICES SECTION -->
+    <!-- SERVICES SECTION -->
     <section id="services" class="py-24 px-6 max-w-7xl mx-auto">
         <div class="text-center mb-16">
             <p class="text-amber-600 font-semibold tracking-wider text-xs uppercase mb-2">Our Services</p>
@@ -68,40 +66,38 @@
             </p>
         </div>
 
-        <!-- 4-Card Service Grid -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            
-            <!-- Card 1: Buyers & Sellers -->
+            <!-- Card 1 -->
             <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm flex flex-col justify-between hover:shadow-md transition">
                 <div>
                     <div class="w-12 h-12 bg-slate-50 text-slate-700 flex items-center justify-center rounded-xl mb-6 text-xl">🏠</div>
                     <h3 class="text-xl font-bold text-slate-900 mb-1">Buyers & Sellers</h3>
                     <p class="text-xs font-medium text-slate-400 mb-4">Residential Real Estate</p>
                     <p class="text-sm text-slate-500 leading-relaxed font-light mb-6">
-                        Whether you're buying your first home or selling a cherished property, our team delivers white-glove service from listing to closing. Market expertise, skilled negotiation, and a seamless experience—every time.
+                        Whether you're buying your first home or selling a cherished property, our team delivers white-glove service from listing to closing.
                     </p>
                 </div>
-                <a href="#contact" class="text-sm font-semibold text-slate-900 hover:text-amber-600 flex items-center gap-1 transition">
+                <a href="#contact" onclick="document.getElementById('service-interest').value='Buying or Selling a Home'" class="text-sm font-semibold text-slate-900 hover:text-amber-600 flex items-center gap-1 transition">
                     Start Your Home Search <span class="text-xs">→</span>
                 </a>
             </div>
 
-            <!-- Card 2: Property Management -->
+            <!-- Card 2 -->
             <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm flex flex-col justify-between hover:shadow-md transition">
                 <div>
                     <div class="w-12 h-12 bg-slate-50 text-slate-700 flex items-center justify-center rounded-xl mb-6 text-xl">🏢</div>
                     <h3 class="text-xl font-bold text-slate-900 mb-1">Property Management</h3>
                     <p class="text-xs font-medium text-slate-400 mb-4">Powered by PMI Beltline</p>
                     <p class="text-sm text-slate-500 leading-relaxed font-light mb-6">
-                        Maximize your investment with professional property management backed by the PMI Beltline network. From tenant screening to maintenance coordination, we protect your asset and your peace of mind.
+                        Maximize your investment with professional property management. From tenant screening to maintenance coordination, we protect your asset.
                     </p>
                 </div>
-                <a href="#contact" class="text-sm font-semibold text-slate-900 hover:text-amber-600 flex items-center gap-1 transition">
+                <a href="#contact" onclick="document.getElementById('service-interest').value='Property Management'" class="text-sm font-semibold text-slate-900 hover:text-amber-600 flex items-center gap-1 transition">
                     Explore Management Services <span class="text-xs">→</span>
                 </a>
             </div>
 
-            <!-- Card 3: As-Is Quick Sales (Highlighted Premium Card) -->
+            <!-- Card 3 -->
             <div class="bg-white p-8 rounded-2xl border-2 border-amber-500/70 shadow-md flex flex-col justify-between relative transform scale-[1.02] md:scale-100 lg:scale-[1.02] hover:shadow-lg transition">
                 <span class="absolute top-4 right-4 bg-amber-100 text-amber-800 text-[10px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wider">Fast Close</span>
                 <div>
@@ -109,109 +105,160 @@
                     <h3 class="text-xl font-bold text-slate-900 mb-1">As-Is Quick Sales</h3>
                     <p class="text-xs font-medium text-amber-600 mb-4">Fast Cash Offers for Any Condition</p>
                     <p class="text-sm text-slate-500 leading-relaxed font-light mb-6">
-                        Facing a distressed property, code violations, or need to sell fast? We buy homes as-is with no repairs, no inspections, and no hassle. Get a fair cash offer in as little as 24 hours.
+                        Facing a distressed property or need to sell fast? We buy homes as-is with no repairs, no inspections, and no hassle. Get an offer in 24 hours.
                     </p>
                 </div>
-                <a href="#contact" class="text-sm font-semibold text-amber-600 hover:text-amber-700 flex items-center gap-1 transition">
+                <a href="#contact" onclick="document.getElementById('service-interest').value='As-Is Quick Sale (Cash Offer)'" class="text-sm font-semibold text-amber-600 hover:text-amber-700 flex items-center gap-1 transition">
                     Get Your Cash Offer <span class="text-xs">→</span>
                 </a>
             </div>
 
-            <!-- Card 4: Estate Executors -->
+            <!-- Card 4 -->
             <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm flex flex-col justify-between hover:shadow-md transition">
                 <div>
                     <div class="w-12 h-12 bg-slate-50 text-slate-700 flex items-center justify-center rounded-xl mb-6 text-xl">⚖️</div>
                     <h3 class="text-xl font-bold text-slate-900 mb-1">Estate Executors</h3>
                     <p class="text-xs font-medium text-slate-400 mb-4">Specialized Probate Support</p>
                     <p class="text-sm text-slate-500 leading-relaxed font-light mb-6">
-                        Navigating real estate during probate is complex. Our team provides compassionate, knowledgeable guidance to executors—handling valuations, court requirements, and property disposition with care.
+                        Navigating real estate during probate is complex. Our team provides compassionate guidance to executors—handling court requirements with care.
                     </p>
                 </div>
-                <a href="#contact" class="text-sm font-semibold text-slate-900 hover:text-amber-600 flex items-center gap-1 transition">
+                <a href="#contact" onclick="document.getElementById('service-interest').value='Estate/Probate Services'" class="text-sm font-semibold text-slate-900 hover:text-amber-600 flex items-center gap-1 transition">
                     Schedule a Consultation <span class="text-xs">→</span>
                 </a>
             </div>
-
         </div>
     </section>
 
-    <!-- 4. VALUES SECTION -->
+    <!-- VALUES SECTION -->
     <section id="about" class="bg-slate-100 py-20 px-6 border-y border-slate-200/60">
         <div class="max-w-6xl mx-auto text-center">
             <p class="text-amber-600 font-semibold tracking-wider text-xs uppercase mb-2">Why Team Donovan</p>
             <h2 class="text-3xl font-serif font-medium text-slate-900 mb-12">Built on Trust. Driven by Results.</h2>
-            
             <div class="grid grid-cols-2 lg:grid-cols-4 gap-8">
                 <div>
-                    <div class="text-2xl mb-2 text-slate-700">🛡️</div>
+                    <div class="text-2xl mb-2">🛡️</div>
                     <h4 class="font-bold text-slate-900 text-base mb-1">Trusted & Licensed</h4>
-                    <p class="text-xs text-slate-400 font-light">Full transparency at every step</p>
+                    <p class="text-xs text-slate-500 font-light">Full transparency at every step</p>
                 </div>
                 <div>
-                    <div class="text-2xl mb-2 text-slate-700">🕒</div>
+                    <div class="text-2xl mb-2">🕒</div>
                     <h4 class="font-bold text-slate-900 text-base mb-1">Responsive</h4>
-                    <p class="text-xs text-slate-400 font-light">We return every call within the hour</p>
+                    <p class="text-xs text-slate-500 font-light">We return every call promptly</p>
                 </div>
                 <div>
-                    <div class="text-2xl mb-2 text-slate-700">❤️</div>
+                    <div class="text-2xl mb-2">❤️</div>
                     <h4 class="font-bold text-slate-900 text-base mb-1">Client-First</h4>
-                    <p class="text-xs text-slate-400 font-light">Your goals drive our strategy</p>
+                    <p class="text-xs text-slate-500 font-light">Your goals drive our strategy</p>
                 </div>
                 <div>
-                    <div class="text-2xl mb-2 text-slate-700">🏅</div>
+                    <div class="text-2xl mb-2">🏅</div>
                     <h4 class="font-bold text-slate-900 text-base mb-1">Proven Results</h4>
-                    <p class="text-xs text-slate-400 font-light">Hundreds of successful closings</p>
+                    <p class="text-xs text-slate-500 font-light">Hundreds of successful closings</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 5. FOOTER & CONTACT SECTION -->
-    <footer id="contact" class="bg-[#0B132B] text-slate-400 pt-20 pb-10 px-6">
-        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 border-b border-slate-800 pb-16 mb-10">
+    <!-- SMART FORM & CONTACT SECTION -->
+    <section id="contact" class="py-24 px-6 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
             
-            <!-- Left Brand Summary -->
-            <div>
-                <div class="text-xl font-bold text-white mb-4">
-                    Team<span class="text-amber-400 font-medium">Donovan</span>
-                </div>
-                <p class="text-sm font-light leading-relaxed max-w-sm">
-                    Your trusted partner in residential sales, property management, quick-sale solutions, and estate services.
+            <!-- Left: Contact Details -->
+            <div class="flex flex-col justify-center">
+                <p class="text-amber-600 font-semibold tracking-wider text-xs uppercase mb-2">Get In Touch</p>
+                <h2 class="text-4xl font-serif font-medium text-slate-900 mb-6">Let's Discuss Your Real Estate Goals</h2>
+                <p class="text-slate-500 leading-relaxed font-light mb-10 max-w-md">
+                    Whether you are ready to list, need a fast cash offer, or are looking for management services, fill out the form and our team will connect with you shortly.
                 </p>
+                
+                <div class="space-y-6">
+                    <div class="flex items-start gap-4">
+                        <div class="w-10 h-10 bg-slate-100 text-slate-700 flex items-center justify-center rounded-full">📞</div>
+                        <div>
+                            <p class="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-1">Call Us Directly</p>
+                            <a href="tel:1234567890" class="text-lg font-medium text-slate-900 hover:text-amber-600 transition">(123) 456-7890</a>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="w-10 h-10 bg-slate-100 text-slate-700 flex items-center justify-center rounded-full">✉️</div>
+                        <div>
+                            <p class="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-1">Email Us</p>
+                            <a href="mailto:donovan@teamdonovan.net" class="text-lg font-medium text-slate-900 hover:text-amber-600 transition">donovan@teamdonovan.net</a>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="w-10 h-10 bg-slate-100 text-slate-700 flex items-center justify-center rounded-full">📍</div>
+                        <div>
+                            <p class="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-1">Location</p>
+                            <p class="text-lg font-medium text-slate-900">Atlanta, GA</p>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <!-- Middle Quick Links -->
-            <div>
-                <h4 class="text-white font-semibold text-sm tracking-wider uppercase mb-4">Quick Links</h4>
-                <ul class="space-y-2 text-sm font-light">
-                    <li><a href="#services" class="hover:text-amber-400 transition">Buyers & Sellers</a></li>
-                    <li><a href="#services" class="hover:text-amber-400 transition">Property Management</a></li>
-                    <li><a href="#services" class="hover:text-amber-400 transition">As-Is Quick Sales</a></li>
-                    <li><a href="#services" class="hover:text-amber-400 transition">Estate Executors</a></li>
-                </ul>
-            </div>
+            <!-- Right: Submission Form -->
+            <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-xl shadow-slate-200/50">
+                <form action="https://formsubmit.co/donovan@teamdonovan.net" method="POST" class="space-y-5">
+                    
+                    <!-- Hidden settings for FormSubmit -->
+                    <input type="hidden" name="_subject" value="New Lead from TeamDonovan.net!">
+                    <input type="hidden" name="_captcha" value="false">
 
-            <!-- Right Contact Details (Linked directly to your phone and Zoho) -->
-            <div>
-                <h4 class="text-white font-semibold text-sm tracking-wider uppercase mb-4">Get In Touch</h4>
-                <ul class="space-y-3 text-sm font-light">
-                    <li class="flex items-center gap-2">
-                        📞 <a href="tel:1234567890" class="hover:text-amber-400 transition">(123) 456-7890</a>
-                    </li>
-                    <li class="flex items-center gap-2">
-                        ✉️ <a href="mailto:donovan@teamdonovan.net" class="hover:text-amber-400 transition">donovan@teamdonovan.net</a>
-                    </li>
-                    <li class="flex items-center gap-2">
-                        📍 <span>Atlanta, GA</span>
-                    </li>
-                </ul>
-            </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-2">First Name</label>
+                            <input type="text" name="First Name" required class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:border-amber-500 focus:ring-1 focus:ring-amber-500 outline-none transition bg-slate-50">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-2">Last Name</label>
+                            <input type="text" name="Last Name" required class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:border-amber-500 focus:ring-1 focus:ring-amber-500 outline-none transition bg-slate-50">
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-2">Email Address</label>
+                        <input type="email" name="Email" required class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:border-amber-500 focus:ring-1 focus:ring-amber-500 outline-none transition bg-slate-50">
+                    </div>
 
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-2">Phone Number</label>
+                        <input type="tel" name="Phone" class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:border-amber-500 focus:ring-1 focus:ring-amber-500 outline-none transition bg-slate-50">
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-2">How can we help you?</label>
+                        <select id="service-interest" name="Service Interest" class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:border-amber-500 focus:ring-1 focus:ring-amber-500 outline-none transition bg-slate-50 text-slate-700">
+                            <option value="General Inquiry">General Inquiry</option>
+                            <option value="Buying or Selling a Home">Buying or Selling a Home</option>
+                            <option value="Property Management">Property Management (PMI Beltline)</option>
+                            <option value="As-Is Quick Sale (Cash Offer)">As-Is Quick Sale (Cash Offer)</option>
+                            <option value="Estate/Probate Services">Estate/Probate Services</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-2">Message or Property Address</label>
+                        <textarea name="Message" rows="3" placeholder="Tell us a little bit about your property or timeline..." class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:border-amber-500 focus:ring-1 focus:ring-amber-500 outline-none transition bg-slate-50"></textarea>
+                    </div>
+
+                    <button type="submit" class="w-full bg-slate-900 hover:bg-amber-500 text-white hover:text-slate-900 font-bold py-4 rounded-lg transition shadow-lg mt-2">
+                        Send Message
+                    </button>
+                </form>
+            </div>
         </div>
+    </section>
 
-        <!-- Dynamic Copyright Row -->
-        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between text-xs font-light tracking-wide text-slate-500">
+    <!-- FOOTER -->
+    <footer class="bg-[#0B132B] text-slate-500 py-8 px-6 text-center text-sm font-light">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
             <p>&copy; 2026 TeamDonovan.net. All rights reserved.</p>
+            <div class="flex gap-6">
+                <a href="#services" class="hover:text-amber-400 transition">Services</a>
+                <a href="#about" class="hover:text-amber-400 transition">About</a>
+                <a href="#contact" class="hover:text-amber-400 transition">Contact</a>
+            </div>
         </div>
     </footer>
 
