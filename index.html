@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Donovan | Concierge Real Estate Services</title>
+    <!-- Tailwind CSS for modern layout styling -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Google Fonts for the luxury Serif and clean Sans typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .font-serif { font-family: 'Playfair Display', serif; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased scroll-smooth">
+
+    <!-- 1. NAVIGATION BAR -->
+    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-100 px-6 py-4 flex justify-between items-center shadow-sm">
+        <div class="text-xl font-bold tracking-tight text-slate-900">
+            Team<span class="text-amber-500 font-medium">Donovan</span>
+        </div>
+        <div class="hidden md:flex space-x-8 text-sm font-medium text-slate-600">
+            <a href="#services" class="hover:text-amber-600 transition">Services</a>
+            <a href="#about" class="hover:text-amber-600 transition">About</a>
+            <a href="#contact" class="hover:text-amber-600 transition">Contact</a>
+        </div>
+        <div>
+            <a href="tel:1234567890" class="text-sm font-semibold text-slate-900 flex items-center gap-2 border border-slate-200 px-4 py-2 rounded-full hover:bg-slate-50 transition">
+                📞 Call Us
+            </a>
+        </div>
+    </nav>
+
+    <!-- 2. HERO SECTION -->
+    <header class="relative bg-slate-900 h-[85vh] flex items-center justify-center overflow-hidden">
+        <!-- Luxury Real Estate Background Image Overlay -->
+        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1920&q=80" alt="Luxury Real Estate" class="absolute inset-0 w-full h-full object-cover opacity-35 mix-blend-multiply">
+        
+        <div class="relative max-w-4xl mx-auto text-center px-6 text-white">
+            <p class="text-amber-400 font-semibold tracking-widest text-xs uppercase mb-3">teamdonovan.net</p>
+            <h1 class="text-4xl md:text-6xl font-serif font-medium leading-tight mb-6">
+                Your Concierge Real Estate<br>Experience Starts Here
+            </h1>
+            <p class="text-lg md:text-xl text-slate-200 font-light max-w-2xl mx-auto leading-relaxed mb-8">
+                From buying and selling to property management and probate—Team Donovan delivers trusted guidance for every stage of your real estate journey.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#services" class="bg-amber-500 hover:bg-amber-600 text-slate-950 font-medium px-8 py-3.5 rounded-lg flex items-center justify-center gap-2 transition shadow-lg shadow-amber-500/20">
+                    Explore Our Services <span>→</span>
+                </a>
+                <a href="#contact" class="border border-white/40 hover:border-white bg-white/5 hover:bg-white/10 text-white font-medium px-8 py-3.5 rounded-lg transition">
+                    Contact Us
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 3. SERVICES SECTION -->
+    <section id="services" class="py-24 px-6 max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <p class="text-amber-600 font-semibold tracking-wider text-xs uppercase mb-2">Our Services</p>
+            <h2 class="text-3xl md:text-4xl font-serif font-medium text-slate-900 mb-4">Four Ways We Serve You</h2>
+            <p class="text-slate-500 max-w-2xl mx-auto font-light">
+                Every real estate situation is unique. That's why Team Donovan offers four distinct paths—each backed by experience, integrity, and a commitment to your success.
+            </p>
+        </div>
+
+        <!-- 4-Card Service Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            
+            <!-- Card 1: Buyers & Sellers -->
+            <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm flex flex-col justify-between hover:shadow-md transition">
+                <div>
+                    <div class="w-12 h-12 bg-slate-50 text-slate-700 flex items-center justify-center rounded-xl mb-6 text-xl">🏠</div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-1">Buyers & Sellers</h3>
+                    <p class="text-xs font-medium text-slate-400 mb-4">Residential Real Estate</p>
+                    <p class="text-sm text-slate-500 leading-relaxed font-light mb-6">
+                        Whether you're buying your first home or selling a cherished property, our team delivers white-glove service from listing to closing. Market expertise, skilled negotiation, and a seamless experience—every time.
+                    </p>
+                </div>
+                <a href="#contact" class="text-sm font-semibold text-slate-900 hover:text-amber-600 flex items-center gap-1 transition">
+                    Start Your Home Search <span class="text-xs">→</span>
+                </a>
+            </div>
+
+            <!-- Card 2: Property Management -->
+            <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm flex flex-col justify-between hover:shadow-md transition">
+                <div>
+                    <div class="w-12 h-12 bg-slate-50 text-slate-700 flex items-center justify-center rounded-xl mb-6 text-xl">🏢</div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-1">Property Management</h3>
+                    <p class="text-xs font-medium text-slate-400 mb-4">Powered by PMI Beltline</p>
+                    <p class="text-sm text-slate-500 leading-relaxed font-light mb-6">
+                        Maximize your investment with professional property management backed by the PMI Beltline network. From tenant screening to maintenance coordination, we protect your asset and your peace of mind.
+                    </p>
+                </div>
+                <a href="#contact" class="text-sm font-semibold text-slate-900 hover:text-amber-600 flex items-center gap-1 transition">
+                    Explore Management Services <span class="text-xs">→</span>
+                </a>
+            </div>
+
+            <!-- Card 3: As-Is Quick Sales (Highlighted Premium Card) -->
+            <div class="bg-white p-8 rounded-2xl border-2 border-amber-500/70 shadow-md flex flex-col justify-between relative transform scale-[1.02] md:scale-100 lg:scale-[1.02] hover:shadow-lg transition">
+                <span class="absolute top-4 right-4 bg-amber-100 text-amber-800 text-[10px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wider">Fast Close</span>
+                <div>
+                    <div class="w-12 h-12 bg-amber-50 text-amber-600 flex items-center justify-center rounded-xl mb-6 text-xl">⚡</div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-1">As-Is Quick Sales</h3>
+                    <p class="text-xs font-medium text-amber-600 mb-4">Fast Cash Offers for Any Condition</p>
+                    <p class="text-sm text-slate-500 leading-relaxed font-light mb-6">
+                        Facing a distressed property, code violations, or need to sell fast? We buy homes as-is with no repairs, no inspections, and no hassle. Get a fair cash offer in as little as 24 hours.
+                    </p>
+                </div>
+                <a href="#contact" class="text-sm font-semibold text-amber-600 hover:text-amber-700 flex items-center gap-1 transition">
+                    Get Your Cash Offer <span class="text-xs">→</span>
+                </a>
+            </div>
+
+            <!-- Card 4: Estate Executors -->
+            <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm flex flex-col justify-between hover:shadow-md transition">
+                <div>
+                    <div class="w-12 h-12 bg-slate-50 text-slate-700 flex items-center justify-center rounded-xl mb-6 text-xl">⚖️</div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-1">Estate Executors</h3>
+                    <p class="text-xs font-medium text-slate-400 mb-4">Specialized Probate Support</p>
+                    <p class="text-sm text-slate-500 leading-relaxed font-light mb-6">
+                        Navigating real estate during probate is complex. Our team provides compassionate, knowledgeable guidance to executors—handling valuations, court requirements, and property disposition with care.
+                    </p>
+                </div>
+                <a href="#contact" class="text-sm font-semibold text-slate-900 hover:text-amber-600 flex items-center gap-1 transition">
+                    Schedule a Consultation <span class="text-xs">→</span>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 4. VALUES SECTION -->
+    <section id="about" class="bg-slate-100 py-20 px-6 border-y border-slate-200/60">
+        <div class="max-w-6xl mx-auto text-center">
+            <p class="text-amber-600 font-semibold tracking-wider text-xs uppercase mb-2">Why Team Donovan</p>
+            <h2 class="text-3xl font-serif font-medium text-slate-900 mb-12">Built on Trust. Driven by Results.</h2>
+            
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                    <div class="text-2xl mb-2 text-slate-700">🛡️</div>
+                    <h4 class="font-bold text-slate-900 text-base mb-1">Trusted & Licensed</h4>
+                    <p class="text-xs text-slate-400 font-light">Full transparency at every step</p>
+                </div>
+                <div>
+                    <div class="text-2xl mb-2 text-slate-700">🕒</div>
+                    <h4 class="font-bold text-slate-900 text-base mb-1">Responsive</h4>
+                    <p class="text-xs text-slate-400 font-light">We return every call within the hour</p>
+                </div>
+                <div>
+                    <div class="text-2xl mb-2 text-slate-700">❤️</div>
+                    <h4 class="font-bold text-slate-900 text-base mb-1">Client-First</h4>
+                    <p class="text-xs text-slate-400 font-light">Your goals drive our strategy</p>
+                </div>
+                <div>
+                    <div class="text-2xl mb-2 text-slate-700">🏅</div>
+                    <h4 class="font-bold text-slate-900 text-base mb-1">Proven Results</h4>
+                    <p class="text-xs text-slate-400 font-light">Hundreds of successful closings</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. FOOTER & CONTACT SECTION -->
+    <footer id="contact" class="bg-[#0B132B] text-slate-400 pt-20 pb-10 px-6">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 border-b border-slate-800 pb-16 mb-10">
+            
+            <!-- Left Brand Summary -->
+            <div>
+                <div class="text-xl font-bold text-white mb-4">
+                    Team<span class="text-amber-400 font-medium">Donovan</span>
+                </div>
+                <p class="text-sm font-light leading-relaxed max-w-sm">
+                    Your trusted partner in residential sales, property management, quick-sale solutions, and estate services.
+                </p>
+            </div>
+
+            <!-- Middle Quick Links -->
+            <div>
+                <h4 class="text-white font-semibold text-sm tracking-wider uppercase mb-4">Quick Links</h4>
+                <ul class="space-y-2 text-sm font-light">
+                    <li><a href="#services" class="hover:text-amber-400 transition">Buyers & Sellers</a></li>
+                    <li><a href="#services" class="hover:text-amber-400 transition">Property Management</a></li>
+                    <li><a href="#services" class="hover:text-amber-400 transition">As-Is Quick Sales</a></li>
+                    <li><a href="#services" class="hover:text-amber-400 transition">Estate Executors</a></li>
+                </ul>
+            </div>
+
+            <!-- Right Contact Details (Linked directly to your phone and Zoho) -->
+            <div>
+                <h4 class="text-white font-semibold text-sm tracking-wider uppercase mb-4">Get In Touch</h4>
+                <ul class="space-y-3 text-sm font-light">
+                    <li class="flex items-center gap-2">
+                        📞 <a href="tel:1234567890" class="hover:text-amber-400 transition">(123) 456-7890</a>
+                    </li>
+                    <li class="flex items-center gap-2">
+                        ✉️ <a href="mailto:donovan@teamdonovan.net" class="hover:text-amber-400 transition">donovan@teamdonovan.net</a>
+                    </li>
+                    <li class="flex items-center gap-2">
+                        📍 <span>Atlanta, GA</span>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- Dynamic Copyright Row -->
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between text-xs font-light tracking-wide text-slate-500">
+            <p>&copy; 2026 TeamDonovan.net. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
