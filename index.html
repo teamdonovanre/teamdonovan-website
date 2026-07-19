@@ -207,7 +207,10 @@
                         <div class="w-10 h-10 bg-slate-100 text-slate-700 flex items-center justify-center rounded-full">✉️</div>
                         <div>
                             <p class="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-1">Email Us</p>
-                            <a href="mailto:donovan@teamdonovan.net" class="text-lg font-medium text-slate-900 hover:text-amber-600 transition">donovan@teamdonovan.net</a>
+                            <!-- The email string below is fully entity-encoded to hide it from scrapers -->
+                            <a href="mailto:&#100;&#111;&#110;&#111;&#118;&#97;&#110;&#64;&#116;&#101;&#97;&#109;&#100;&#111;&#110;&#111;&#118;&#97;&#110;&#46;&#110;&#101;&#116;" class="text-lg font-medium text-slate-900 hover:text-amber-600 transition">
+                                donovan&#64;teamdonovan&#46;net
+                            </a>
                         </div>
                     </div>
                     <div class="flex items-start gap-4">
@@ -222,7 +225,7 @@
 
             <!-- Right: Submission Form -->
             <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-xl shadow-slate-200/50">
-                <form action="https://formsubmit.co/donovan@teamdonovan.net" method="POST" class="space-y-5">
+                <form action="https://formsubmit.co/8d44bd1038cdf71d9b1d653ae9f9e89c" method="POST" class="space-y-5">
                     
                     <!-- Hidden settings for FormSubmit -->
                     <input type="hidden" name="_subject" value="New Lead from TeamDonovan.net!">
