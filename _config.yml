@@ -1,0 +1,10 @@
+title: "Team Donovan"
+description: "Concierge Real Estate Services Across Metro Atlanta"
+url: "https://teamdonovan.net"
+
+# Generates clean URLs (e.g. teamdonovan.net/blog/buy-before-sell-metro-atlanta/)
+permalink: /blog/:title/
+
+# Auto-supported plugins on GitHub Pages
+plugins:
+  - jekyll-sitemap
