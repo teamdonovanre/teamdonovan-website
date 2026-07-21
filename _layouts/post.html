@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} | Team Donovan</title>
+    <meta name="description" content="{{ page.description }}">
+    
+    <!-- Tailwind CSS with Typography Plugin -->
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+</head>
+<body class="bg-slate-900 text-slate-100 font-sans antialiased min-h-screen flex flex-col">
+
+    <!-- NAVIGATION HEADER -->
+    <header class="bg-slate-950/90 backdrop-blur-md border-b border-slate-800 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="/" class="flex items-center gap-3">
+                <span class="text-amber-500 font-bold text-2xl flex items-center">
+                    <svg class="w-6 h-6 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 15l7-7 7 7"/></svg>
+                    TEAM
+                </span>
+                <span class="text-white tracking-widest text-sm font-medium border-l border-slate-700 pl-3">DONOVAN</span>
+            </a>
+            
+            <a href="tel:4045188874" class="inline-flex items-center gap-2 bg-amber-500 hover:bg-amber-400 text-slate-950 font-semibold px-5 py-2.5 rounded-lg transition-all text-sm shadow-lg shadow-amber-500/10">
+                CALL US
+            </a>
+        </div>
+    </header>
+
+    <!-- ARTICLE MAIN CONTAINER -->
+    <main class="flex-grow py-12 px-4 sm:px-6">
+        <div class="max-w-4xl mx-auto bg-white text-slate-900 rounded-2xl p-6 sm:p-12 shadow-2xl border border-slate-100">
+            
+            <!-- Breadcrumbs -->
+            <nav class="text-sm text-slate-500 mb-6 flex items-center gap-2">
+                <a href="/" class="hover:text-amber-600 transition">Home</a>
+                <span>/</span>
+                <a href="/blog/" class="hover:text-amber-600 transition">Blog</a>
+            </nav>
+
+            <!-- PROSE TYPOGRAPHY CONTAINER -->
+            <article class="prose prose-slate lg:prose-lg max-w-none 
+                            prose-headings:text-slate-900 
+                            prose-h1:text-3xl sm:prose-h1:text-4xl prose-h1:font-bold prose-h1:tracking-tight
+                            prose-h3:text-xl prose-h3:font-semibold prose-h3:mt-8
+                            prose-a:text-amber-600 prose-a:font-semibold hover:prose-a:text-amber-500
+                            prose-img:rounded-xl prose-img:shadow-md prose-img:w-full prose-img:object-cover">
+                
+                <h1>{{ page.title }}</h1>
+                
+                <!-- DYNAMIC ARTICLE CONTENT INSERTED HERE -->
+                {{ content }}
+
+                <hr class="my-8 border-slate-200">
+
+                <h3>Next Steps</h3>
+                <p>The decision to buy before selling depends on your local market conditions and your personal financial liquidity.</p>
+                <p>For a direct consultation regarding your move-up strategy, <a href="/#contact">contact Team Donovan directly</a> or call <a href="tel:4045188874">(404) 518-8874</a>.</p>
+            </article>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-950 border-t border-slate-800 text-slate-400 py-12">
+        <div class="max-w-7xl mx-auto px-6 text-center sm:text-left sm:flex sm:justify-between sm:items-center">
+            <div>
+                <p class="text-white font-bold text-lg mb-1">TEAM DONOVAN</p>
+                <p class="text-sm text-slate-500">Concierge Real Estate Services Across Metro Atlanta</p>
+            </div>
+            <div class="mt-6 sm:mt-0 text-sm">
+                <a href="/" class="hover:text-amber-500 transition mr-6">Home</a>
+                <a href="/blog/" class="hover:text-amber-500 transition mr-6">Blog</a>
+                <a href="/#contact" class="hover:text-amber-500 transition">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
