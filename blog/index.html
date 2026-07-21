@@ -6,22 +6,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Real Estate Insights & Market Analysis | Team Donovan</title>
+    
     <!-- SVG FAVICON -->
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' fill='none'><path d='M15 70 L50 30 L85 70' stroke='%23fbbf24' stroke-width='10' stroke-linecap='round' stroke-linejoin='round'/></svg>">
+    
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-slate-900 text-slate-100 font-sans min-h-screen flex flex-col">
 
-    <!-- HEADER -->
-    <header class="bg-slate-950/90 border-b border-slate-800 sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-            <a href="/" class="flex items-center gap-3">
-                <span class="text-amber-500 font-bold text-2xl">TEAM</span>
-                <span class="text-white tracking-widest text-sm font-medium border-l border-slate-700 pl-3">DONOVAN</span>
-            </a>
-            <a href="/#contact" class="bg-amber-500 text-slate-950 font-semibold px-5 py-2.5 rounded-lg text-sm hover:bg-amber-400 transition">Contact Us</a>
-        </div>
-    </header>
+    <!-- GLOBAL NAVBAR INCLUDE -->
+    {% include header.html %}
 
     <!-- HERO SECTION -->
     <section class="py-16 px-6 max-w-7xl mx-auto text-center sm:text-left">
