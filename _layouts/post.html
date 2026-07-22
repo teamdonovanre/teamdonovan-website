@@ -1,6 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- OPEN GRAPH / SOCIAL MEDIA PREVIEWS -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="{{ page.title }}">
+    <meta property="og:description" content="{{ page.description | default: 'Concierge Real Estate Services Across Metro Atlanta.' }}">
+    <meta property="og:url" content="{{ page.url | absolute_url }}">
+    <meta property="og:site_name" content="Team Donovan Real Estate">
+    
+    <!-- Preview Image -->
+    {% if page.image %}
+      <meta property="og:image" content="{{ page.image | absolute_url }}">
+    {% else %}
+      <meta property="og:image" content="{{ '/TeamDonovanLogo.jpg' | absolute_url }}">
+    {% endif %}
+    
+    <!-- TWITTER / X CARD DATA -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ page.title }}">
+    <meta name="twitter:description" content="{{ page.description | default: 'Concierge Real Estate Services Across Metro Atlanta.' }}">
+    {% if page.image %}
+      <meta name="twitter:image" content="{{ page.image | absolute_url }}">
+    {% endif %}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }} | Team Donovan</title>
