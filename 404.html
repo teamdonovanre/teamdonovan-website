@@ -1,0 +1,55 @@
+---
+permalink: /404.html
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found | Team Donovan</title>
+    
+    <!-- SVG FAVICON -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' fill='none'><path d='M15 70 L50 30 L85 70' stroke='%23fbbf24' stroke-width='10' stroke-linecap='round' stroke-linejoin='round'/></svg>">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased min-h-screen flex flex-col">
+
+    <!-- GLOBAL HEADER -->
+    {% include header.html %}
+
+    <!-- 404 HERO SECTION -->
+    <main class="flex-grow flex items-center justify-center px-6 py-20 text-center">
+        <div class="max-w-xl mx-auto">
+            
+            <p class="text-amber-500 font-mono text-xs font-semibold tracking-widest uppercase mb-3">
+                Error 404
+            </p>
+            
+            <h1 class="text-3xl sm:text-5xl font-bold tracking-tight mb-4 text-white">
+                This Property Isn't on the Market
+            </h1>
+            
+            <p class="text-slate-400 text-base sm:text-lg mb-8 leading-relaxed">
+                The address or page you're looking for may have moved, been renamed, or no longer exists. Let's get your search back on track.
+            </p>
+
+            <!-- ACTION BUTTONS -->
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="/" class="w-full sm:w-auto px-6 py-3 bg-amber-500 hover:bg-amber-400 text-slate-950 font-semibold text-sm rounded-lg transition shadow-lg shadow-amber-500/10">
+                    Return to Homepage
+                </a>
+                <a href="/blog/" class="w-full sm:w-auto px-6 py-3 bg-slate-900 hover:bg-slate-800 text-slate-200 text-sm font-semibold border border-slate-800 rounded-lg transition">
+                    Browse Market Insights
+                </a>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- GLOBAL FOOTER -->
+    {% include footer.html %}
+
+</body>
+</html>
