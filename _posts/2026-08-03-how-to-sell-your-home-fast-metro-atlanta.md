@@ -49,7 +49,7 @@ image: 'https://cdn.marblism.com/xD9rD1tHvIm.webp'
 - **Cash buyers trade speed for price.** You may close in 7 to 21 days, but often at a discount to market value.  
 - **An MLS listing can produce more proceeds.** If your home is priced correctly and presented well, you may secure a stronger sale price with a moderately longer timeline.  
 - **Georgia closings require attorney involvement.** You should plan for a licensed Georgia closing attorney to oversee the transaction.  
-- **You may have a third option.** If selling now does not meet your goals, you can evaluate renting the property and using professional management through [PMI Beltline](https://teamdonovan.net).
+- **You may have a third option.** If selling now does not meet your goals, you can evaluate renting the property and using professional management through [PMI Beltline](https://www.pmibeltline.com/).
 
 ---
 
